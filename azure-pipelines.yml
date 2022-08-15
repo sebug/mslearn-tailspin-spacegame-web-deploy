@@ -134,6 +134,7 @@ stages:
               appName: '$(WebAppNameStaging)'
               package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
 
+
   - job: RunLoadTests
     dependsOn: Deploy
     displayName: 'Run load tests'
